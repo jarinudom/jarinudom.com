@@ -15,6 +15,10 @@
     %meta{'http-equiv' => "X-XRDS-Location",
           :content => "http://www.myopenid.com/xrds?username=jarinudom.myopenid.com"}
 
+    = javascript_include_tag "Hyphenator.js"
+    :javascript
+      Hyphenator.run();
+    
     / Lets HTML5 run in older browsers
     = javascript_include_tag "html5.js"
     / 52framework stylesheets
