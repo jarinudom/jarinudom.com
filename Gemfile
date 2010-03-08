@@ -14,9 +14,6 @@ end
 
 group :test do
   gem "sqlite3-ruby", :require => "sqlite3"
-  gem "rspec"
-  gem "rspec-rails"
-  gem "factory_girl"
 end
 
 group :production do
