@@ -1,0 +1,22 @@
+!!! 5
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}
+    %title Jarin Udom
+    %meta{:name => "keywords", :content => ""}
+    %meta{:name => "description", :content => ""}
+
+    / Lets HTML5 run in older browsers
+    = javascript_include_tag "html5.js"
+    / 52framework stylesheets
+    = stylesheet_link_tag "reset", "general", "grid"
+    / My styles
+    = stylesheet_link_tag "application"
+  
+  %body
+
+    = render :partial => "layouts/header"
+
+    = yield
+
+    = render :partial => "layouts/footer"

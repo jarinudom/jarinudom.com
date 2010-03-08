@@ -1,0 +1,13 @@
+.row
+  %header
+    %h1.logo.left Jarin Udom
+
+    %nav.right
+      %ul
+        %li{:class => "#{current_page?(root_path) ? 'active' : ''}"}
+          = link_to "Home", root_path
+        %li{:class => "#{current_page?('/resume') ? 'active' : ''}"}
+          = link_to "Resume", "/resume"
+        %li
+          = link_to "View Source", "http://github.com/jarinudom/jarinudom.com", :class => "skinny"
+        

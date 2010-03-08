@@ -7,6 +7,7 @@ gem "capybara"
 gem "database_cleaner"
 gem "cucumber-rails"
 gem "haml"
+gem "RedCloth"
 
 group :development do
   gem "sqlite3-ruby", :require => "sqlite3"
