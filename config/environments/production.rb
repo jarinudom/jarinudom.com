@@ -2,6 +2,7 @@ JarinudomCom::Application.configure do
   # Settings specified here will take precedence over those in config/environment.rb
   
   config.middleware.insert_before(::Rack::Lock, ::Refraction, {})
+  config.middleware.use Hassle
   
   # The production environment is meant for finished, "live" apps.
   # Code is not reloaded between requests
