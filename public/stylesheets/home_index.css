@@ -1,0 +1,99 @@
+#banner {
+  background-color: #202400;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  color: #D2CE9E;
+  padding: 28px 0 10px 0; }
+  #banner p {
+    font-size: 2em;
+    line-height: 1.4em;
+    padding: 0 0 0 28px;
+    margin-bottom: 1em; }
+  #banner img, #banner legend {
+    padding: 0 28px; }
+  #banner a {
+    color: #CCA63B;
+    text-decoration: none; }
+    #banner a:hover {
+      color: #FADC60; }
+
+#fun_facts {
+  padding: 1em 0 1ex 0;
+  border-top: 1px solid #000; }
+  #fun_facts p {
+    background-color: #FADC60;
+    border-top: 1px dashed #CCA63B;
+    border-bottom: 1px dashed #CCA63B;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #CCA63B;
+    padding: 1ex 0; }
+
+#content {
+  background-color: #fff;
+  color: #333; }
+  #content h2, #content aside h3 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 2px; }
+  #content article {
+    margin: 0 28px 3em 28px; }
+    #content article h4 {
+      color: #666; }
+    #content article h3 {
+      margin-top: 1.5em;
+      font-size: 1.6em;
+      color: #CCA63B; }
+    #content article ul.inline_links {
+      margin-left: 0;
+      padding-bottom: 1em;
+      padding-left: 0; }
+      #content article ul.inline_links li {
+        margin-left: 0;
+        padding: 0 15px;
+        border-left: 1px solid #666;
+        list-style: none;
+        display: inline; }
+        #content article ul.inline_links li.first {
+          margin-left: 0;
+          padding-left: 0;
+          border-left: none;
+          list-style: none;
+          display: inline; }
+  #content blockquote {
+    font-size: 1.4em;
+    margin: 2em 0 0 0;
+    padding: 0; }
+    #content blockquote p {
+      margin: 0;
+      padding: 0; }
+    #content blockquote .source {
+      display: block;
+      font-style: normal;
+      font-size: 0.9em;
+      padding-top: 1ex;
+      color: #333; }
+  #content aside h3 {
+    color: #666; }
+  #content aside ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0; }
+    #content aside ul li {
+      color: #999;
+      margin-left: 0;
+      padding: 0 0 1.5ex 0; }
+      #content aside ul li a {
+        text-transform: uppercase;
+        font-weight: bold;
+        text-decoration: none; }
+        #content aside ul li a:hover {
+          text-decoration: underline; }
+  #content aside section.first {
+    padding-top: 4px; }
+  #content aside section {
+    margin: 0 28px 1.2em 0; }
+
+footer {
+  background-color: #111;
+  padding: 2em 0; }

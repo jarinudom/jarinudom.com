@@ -45,37 +45,3 @@ header {
             filter: Shadow(Color=#eeeeee, Direction=180, Strength=0); }
           header nav ul li a.skinny {
             padding: 6px 4px; }
-
-#banner {
-  background-color: #202400;
-  border-top: 1px solid #333;
-  border-bottom: 1px solid #333;
-  color: #D2CE9E;
-  padding: 28px 0; }
-  #banner p {
-    font-size: 2em;
-    line-height: 1.4em;
-    padding: 0 0 0 28px;
-    margin-bottom: 1em; }
-  #banner img, #banner legend {
-    padding: 0 28px; }
-  #banner a {
-    color: #CCA63B;
-    text-decoration: none; }
-    #banner a:hover {
-      color: #FADC60; }
-
-#fun_facts {
-  padding: 1ex 0;
-  border-top: 1px solid #000; }
-  #fun_facts p {
-    background-color: #FADC60;
-    border-top: 1px dashed #CCA63B;
-    border-bottom: 1px dashed #CCA63B;
-    text-align: center;
-    font-size: 1em;
-    padding: 1ex 0; }
-
-#content {
-  background-color: #fff;
-  color: #333; }

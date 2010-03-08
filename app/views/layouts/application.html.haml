@@ -2,17 +2,27 @@
 %html{:lang => "en"}
   %head
     %meta{:charset => "utf-8"}
-    %title Jarin Udom
-    %meta{:name => "keywords", :content => ""}
-    %meta{:name => "description", :content => ""}
+    %title= "Jarin Udom#{' - ' + @title if @title}"
+    
+    %meta{:name => "keywords", :content => "Jarin Udom, resume, Ruby on Rails, iPhone, iPad, developer, programmer, San Diego, CA, California"}
+    %meta{:name => "description", :content => "Everything you ever wanted to know about Jarin Udom, a Ruby on Rails and iPhone/iPad developer in San Diego, CA"}
+    
+    / OpenID delegate
+    %link{:rel => "openid.server", :href => "http://www.myopenid.com/server"}
+    %link{:rel => "openid.delegate", :href => "http://jarinudom.myopenid.com/"}
+    %link{:rel => "openid2.local_id", :href => "http://jarinudom.myopenid.com"}
+    %link{:rel => "openid2.provider", :href => "http://www.myopenid.com/server"}
+    %meta{'http-equiv' => "X-XRDS-Location",
+          :content => "http://www.myopenid.com/xrds?username=jarinudom.myopenid.com"}
 
     / Lets HTML5 run in older browsers
     = javascript_include_tag "html5.js"
     / 52framework stylesheets
     = stylesheet_link_tag "reset", "general", "grid"
-    / My styles
-    = stylesheet_link_tag "application"
-  
+    / Custom stylesheets
+    = stylesheet_link_tag "application", "#{controller_name}_#{action_name}"
+    = yield :head
+    
   %body
 
     = render :partial => "layouts/header"
@@ -20,3 +30,13 @@
     = yield
 
     = render :partial => "layouts/footer"
+    
+    / Google Analytics Code
+    :javascript
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    :javascript
+      try {
+      var pageTracker = _gat._getTracker("UA-1396681-1");
+      pageTracker._trackPageview();
+      } catch(err) {}
