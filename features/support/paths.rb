@@ -12,6 +12,8 @@ module NavigationHelpers
       '/'
     when /the new home page/
       new_home_path
+    when /the resume page/
+      resume_path
 
     
     # Add more mappings here.
