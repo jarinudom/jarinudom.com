@@ -35,7 +35,7 @@
               at
               %span.employer= job.employer
             %p.meta
-              %span.date& #{job.start_date.to_s(:month_year)} – #{job.end_date ? job.end_date.to_s(:month_year) : 'present'},
+              %span.date& #{job.start_date.to_s(:month_year)} – #{date_or_present(job.end_date)},
               %span.location= "in #{job.location}"
             %p.description
               = job.description
