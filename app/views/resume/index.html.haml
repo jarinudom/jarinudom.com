@@ -18,6 +18,14 @@
           %h2 Summary
           %p= @resume.summary
           
+      #skills.col.col_12
+        %h2 Skills
+        %ul
+          - @skills.each do |skill|
+            %li.skill{:class => "skill_#{skill.level}"}
+              = image_tag "skill_#{skill.level}.png"
+              = skill.name
+            
       #jobs.col.col_12
         %h2 Experience
         - @jobs.each do |job|
@@ -31,5 +39,5 @@
               %span.location= "in #{job.location}"
             %p.description
               = job.description
-      
+
 .clear
