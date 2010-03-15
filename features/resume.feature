@@ -15,6 +15,11 @@ Feature: Resume
         | Widget Cranking | 1     |
         | Flying          | 2     |
         | Laser Beams     | 3     |
+        
+      And the following educations exist:
+        | name           |
+        | Trapeze School |
+        | Clown College  |
       
     When I go to the resume page
     
@@ -36,3 +41,7 @@ Feature: Resume
     Then I should see "Widget Cranking" within ".skill_1"
       And I should see "Flying" within ".skill_2"
       And I should see "Laser Beams" within ".skill_3"
+      
+    # Make sure it shows educations
+    Then I should see "Trapeze School" within ".education"
+      And I should see "Clown College" within ".education"

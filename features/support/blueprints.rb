@@ -35,3 +35,10 @@ Skill.blueprint do
   name  { Sham.skill_name }
   level { Sham.skill_level }
 end
+
+Education.blueprint do
+  name        { Sham.employer }
+  location    { Sham.location }
+  date        { Sham.start_date }
+  description { Sham.description }
+end
