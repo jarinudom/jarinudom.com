@@ -17,6 +17,7 @@ group :test do
   gem "sqlite3-ruby", :require => "sqlite3"
   gem "machinist"
   gem "faker"
+  gem "launchy"
 end
 
 group :production do
