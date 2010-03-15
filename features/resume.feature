@@ -17,7 +17,7 @@ Feature: Resume
         | Laser Beams     | 3     |
       
     When I go to the resume page
-    
+        
     # Make sure the right navigation link is highlighted
     Then I should see "Resume" within ".active"
       And I should not see "Home" within ".active"
@@ -31,9 +31,6 @@ Feature: Resume
       And I should see "Super Company" within ".job"
     
     # Make sure it shows skills
-    Then I should see "Widget Cranking" within "li[@class='skill_1']"
-      And I should see "skill_1.png" within "li[@class='skill_1']"
-      And I should see "Flying" within "li[@class='skill_2']"
-      And I should see "skill_2.png" within "li[@class='skill_2']"
-      And I should see "Laser Beams" within "li[@class='skill_3']"
-      And I should see "skill_3.png" within "li[@class='skill_3']"
+    Then I should see "Widget Cranking" within ".skill_1"
+      And I should see "Flying" within ".skill_2"
+      And I should see "Laser Beams" within ".skill_3"
