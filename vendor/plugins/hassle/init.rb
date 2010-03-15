@@ -1,3 +1,3 @@
-if RAILS_ENV == 'production'
+if Rails.env == 'production'
 	Rails.application.middleware.use Hassle
 end
