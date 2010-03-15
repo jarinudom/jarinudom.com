@@ -17,13 +17,15 @@ Sham.position { Faker::Lorem.words(1).first.capitalize }
 Sham.employer { Faker::Company.name }
 Sham.location { "#{Faker::Address.city}, #{Faker::Address.us_state_abbr}" }
 Sham.description { Faker::Company.bs }
+Sham.start_date { Time.now.years_ago(2) }
+Sham.end_date { nil }
 
 Job.blueprint do
   position    { Sham.position }
   employer    { Sham.employer }
   location    { Sham.location }
-  start_date  { Time.now.years_ago(2) }
-  end_date    { Time.now.years_ago(1) }
+  start_date  { Sham.start_date }
+  end_date    { Sham.end_date }
   description { Sham.description }
 end
 

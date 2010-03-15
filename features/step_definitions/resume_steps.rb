@@ -4,6 +4,7 @@ end
 
 Given "the following jobs exist:" do |jobs_table|
   jobs_table.hashes.each do |hash|
+    hash[:end_date] = (hash[:end_date] == "") ? nil : Date.parse(hash[:end_date])
     Job.make(hash)
   end
 end

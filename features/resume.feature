@@ -6,9 +6,9 @@ Feature: Resume
   Scenario: Go to the resume page
     Given a resume exists
       And the following jobs exist:
-        | position | employer       |
-        | Founder  | Robot Mode LLC |
-        | Support  | Super Company  |
+        | position | employer       | end_date   |
+        | Founder  | Robot Mode LLC |            |
+        | Support  | Super Company  | 2005-02-16 |
       
       And the following skills exist:
         | name            | level |
@@ -17,7 +17,7 @@ Feature: Resume
         | Laser Beams     | 3     |
       
     When I go to the resume page
-        
+    
     # Make sure the right navigation link is highlighted
     Then I should see "Resume" within ".active"
       And I should not see "Home" within ".active"
@@ -28,7 +28,9 @@ Feature: Resume
     
     # Make sure it shows jobs
     Then I should see "Founder" within ".job"
+      And I should see "Present" within ".job"
       And I should see "Super Company" within ".job"
+      And I should see "Feb 2005" within ".job"
     
     # Make sure it shows skills
     Then I should see "Widget Cranking" within ".skill_1"
