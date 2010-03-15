@@ -1,8 +1,7 @@
 require 'test_helper'
 
 class JobTest < ActiveSupport::TestCase
-  # Replace this with your real tests.
-  test "the truth" do
-    assert true
-  end
+  # Need to specify the message because Shoulda is not 100% Rails 3 compatible yet
+  should_validate_presence_of :position, :employer, :location, :start, :description,
+                              :message => "can't be blank"
 end
