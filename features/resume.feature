@@ -22,6 +22,7 @@ Feature: Resume
         | Clown College  |
       
     When I go to the resume page
+    # Then show me the page
     
     # Make sure the right navigation link is highlighted
     Then I should see "Resume" within ".active"
