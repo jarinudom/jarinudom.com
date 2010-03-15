@@ -20,3 +20,10 @@ Given "the following educations exist:" do |table|
     Education.make(hash)
   end
 end
+
+Given "the following certifications exist:" do |table|
+  table.hashes.each do |hash|
+    hash[:end_date] = (hash[:end_date] == "") ? nil : Date.parse(hash[:end_date])
+    Certification.make(hash)
+  end
+end

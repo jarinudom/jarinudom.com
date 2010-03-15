@@ -42,3 +42,9 @@ Education.blueprint do
   date        { Sham.start_date }
   description { Sham.description }
 end
+
+Certification.blueprint do
+  name        { Sham.position }
+  start_date  { Sham.start_date }
+  end_date    { Sham.end_date }
+end

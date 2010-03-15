@@ -20,6 +20,11 @@ Feature: Resume
         | name           |
         | Trapeze School |
         | Clown College  |
+        
+      And the following certifications exist:
+        | name | end_date   |
+        | CCNA | 2008-03-06 |
+        | MCSE |            |
       
     When I go to the resume page
     # Then show me the page
@@ -46,3 +51,10 @@ Feature: Resume
     # Make sure it shows educations
     Then I should see "Trapeze School" within ".education"
       And I should see "Clown College" within ".education"
+      
+    # Make sure it shows certifications
+    Then I should see "CCNA" within ".certification"
+      And I should see "Mar 2006" within ".certification"
+      And I should see "MCSE" within ".certification"
+      And I should see "Present" within ".certification"
+      
