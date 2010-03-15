@@ -2,6 +2,8 @@ Given 'a resume' do
   Resume.make
 end
 
-Given 'a job with position "$position" and employer "$employer"' do |position, employer|
-  Job.make(:position => position, :employer => employer)
+Given "the following jobs exist:" do |jobs_table|
+  jobs_table.hashes.each do |hash|
+    Job.make(hash)
+  end
 end

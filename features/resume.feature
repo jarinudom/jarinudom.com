@@ -5,8 +5,10 @@ Feature: Resume
   
   Scenario: Go to the resume page
     Given a resume
-    And a job with position "Founder" and employer "Robot Mode LLC"
-    And a job with position "Tech Support" and employer "Super Company"
+    And the following jobs exist:
+      | position | employer       |
+      | Founder  | Robot Mode LLC |
+      | Support  | Super Company  |
       
     When I go to the resume page
     
