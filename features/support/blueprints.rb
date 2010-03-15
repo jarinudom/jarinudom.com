@@ -27,3 +27,9 @@ Job.blueprint do
   description { Sham.description }
 end
 
+Sham.skill_name  { Faker::Lorem.words(1).first.capitalize }
+Sham.skill_level { rand(3) + 1 }
+Skill.blueprint do
+  name  { Sham.skill_name }
+  level { Sham.skill_level }
+end
