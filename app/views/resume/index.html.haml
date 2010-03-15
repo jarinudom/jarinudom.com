@@ -1,7 +1,30 @@
 %section#resume.row
-  #content.col.col_16
-    %h1 Oops! Resume not here yet!
-    %p
-      Working on it right now, please check back in the next day or two for some fancy stuff!
+  #actions.col.col_16.align_right
+    Print This
+  #content.row
+    #sidebar.col.col_4
+      :textile
+        h2. #{@resume.name}
+        
+        #{@resume.address}
+        #{@resume.city}, #{@resume.state} #{@resume.zip}
+        &#9742; #{@resume.phone}
+        &#9993; #{mail_to @resume.email}
+        &#9881; #{link_to @resume.website}
+        
+    #main.col.col_12
+      #jobs.col.col_12
+        %h2 Experience
+        - @jobs.each do |job|
+          .job
+            %h4
+              %span.position= job.position
+              at
+              %span.employer= job.employer
+            %p.meta
+              %span.date& #{job.start_date.to_s(:month_year)} – #{job.end_date ? job.end_date.to_s(:month_year) : 'present'},
+              %span.location= "in #{job.location}"
+            %p.description
+              = job.description
       
 .clear
