@@ -13,6 +13,11 @@
         &#9881; #{link_to @resume.website}
         
     #main.col.col_12
+      - if @resume.summary
+        #summary.col.col_12
+          %h2 Summary
+          %p= @resume.summary
+          
       #jobs.col.col_12
         %h2 Experience
         - @jobs.each do |job|
