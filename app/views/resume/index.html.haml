@@ -51,6 +51,14 @@
               %span.location= "in #{education.location}"
             %p.description
               = education.description
-            
+      
+      - if @certifications      
+        #certifications.col.col_12
+          %h2 Certifications
+          - @certifications.each do |cert|
+            .certification
+              %h4
+                %span.name= cert.name
+                %span.date& #{cert.start_date.to_s(:month_year)} – #{date_or_present(cert.end_date)}
 
 .clear
