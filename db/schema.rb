@@ -9,12 +9,12 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100314235131) do
+ActiveRecord::Schema.define(:version => 20100315034710) do
 
   create_table "certifications", :force => true do |t|
     t.string   "name",       :null => false
-    t.date     "start",      :null => false
-    t.date     "end"
+    t.date     "start_date", :null => false
+    t.date     "end_date"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -32,8 +32,8 @@ ActiveRecord::Schema.define(:version => 20100314235131) do
     t.string   "position",    :null => false
     t.string   "employer",    :null => false
     t.string   "location",    :null => false
-    t.date     "start",       :null => false
-    t.date     "end"
+    t.date     "start_date",  :null => false
+    t.date     "end_date"
     t.text     "description", :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
