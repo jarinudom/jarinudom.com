@@ -39,5 +39,18 @@
               %span.location= "in #{job.location}"
             %p.description
               = job.description
+              
+      #education.col.col_12
+        %h2 Education
+        - @educations.each do |education|
+          .education
+            %h4
+              %span.name= education.name
+            %p.meta
+              %span.date= education.date
+              %span.location= "in #{education.location}"
+            %p.description
+              = education.description
+            
 
 .clear
