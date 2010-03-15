@@ -2,8 +2,8 @@ require 'test_helper'
 
 class SkillTest < ActiveSupport::TestCase
   
-  should_validate_presence_of :name, :level
-  should_allow_values_for :level, 1, 2, 3
-  should_not_allow_values_for :level, "abcd", 1234
+  # Need to specify the message because Shoulda is not 100% Rails 3 compatible yet
+  should_validate_presence_of :name, :level, :message => "can't be blank"
+  should_ensure_value_in_range :level, 1..3, :message => "is not included in the list"
 
 end
