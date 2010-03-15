@@ -54,7 +54,7 @@ Feature: Resume
       
     # Make sure it shows certifications
     Then I should see "CCNA" within ".certification"
-      And I should see "Mar 2006" within ".certification"
+      And I should see "Mar 2008" within ".certification"
       And I should see "MCSE" within ".certification"
       And I should see "Present" within ".certification"
       
