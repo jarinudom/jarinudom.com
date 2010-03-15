@@ -16,6 +16,7 @@ Feature: Resume
     
     # Make sure it shows my contact info
     Then I should see "(123) 456-7890" within "div[@id='sidebar']"
+    And I should see "super good job" within "div[@id='summary']"
     
     # Make sure it shows jobs
     Then I should see "Founder" within ".job"
