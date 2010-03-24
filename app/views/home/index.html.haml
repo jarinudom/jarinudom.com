@@ -1,3 +1,6 @@
+- content_for :head do
+  = javascript_include_tag "https://www.tungle.me/portal/js/plugins/tungle.mwmWidget.js"
+
 %section#banner.row
   %article.col.col_10.align_left.hyphenate
     :textile
@@ -54,6 +57,7 @@
         TechCrunch article about Naughty America Direct, an iTunes Store-like Adobe AIR application that I planned, managed, and helped develop. The secret to getting an article on TechCrunch? Write Mike Arrington an email at 3 in the morning, I guess. G4's Attack of the Show also did a segment on it, but it's no longer available on their website.
         
   %aside.col.col_5
+      
     %section.first
       :textile
         h3. Around the Web
@@ -67,6 +71,13 @@
         * "LinkedIn":http://www.linkedin.com/in/jarinudom
         * "Pinboard":http://pinboard.in/u:jarin
         My bookmarks
+        
+    %section
+      %h3 Call or Meeting
+      = javascript_include_tag "http://download.skype.com/share/skypebuttons/js/skypeCheck.js"
+      = link_to image_tag("http://mystatus.skype.com/bigclassic/jarinudom", :style => "border: none;", :width => "182", :height => "44", :alt => "My status"), "skype:jarinudom?call"
+      
+      = image_tag "https://www.tungle.me/public/jarin/busyicon", :class => "tungle-me", :teml => "jarin"
     
     %section
       :textile
