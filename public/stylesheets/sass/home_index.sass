@@ -1,7 +1,14 @@
 #banner
   background-color: #202400
-  border-top: 1px solid #333
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#202400', endColorstr='#111300')
+  background: -webkit-gradient(linear, left top, left bottom, from(#202400), to(#111300))
+  background: -moz-linear-gradient(top,  #202400,  #111300)
+  border-top: 1px solid #2f3500
   border-bottom: 1px solid #333
+  -moz-border-radius-topleft: 1em
+  -moz-border-radius-topright: 1em
+  -webkit-border-top-left-radius: 1em
+  -webkit-border-top-right-radius: 1em
   color: #D2CE9E
   padding: 28px 0 10px 0
   p
@@ -24,17 +31,18 @@
   border-top: 1px solid #000
   p
     background-color: #FADC60
-    border-top: 1px dashed #CCA63B
-    border-bottom: 1px dashed #CCA63B
+    border-top: 1px dashed #d3b256
+    border-bottom: 1px dashed #d3b256
     text-align: center
     font-size: 1.2em
     font-weight: bold
-    color: #CCA63B
+    color: #9b7d28
     padding: 1ex 0
     
 #content
-  background-color: #fff
+  background-color: #ffffff
   color: #333
+  border-bottom: 1px solid #ccc
   
   h2, aside h3
     border-bottom: 1px solid #ddd
