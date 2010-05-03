@@ -3,7 +3,10 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#202400', endColorstr='#111300')
   background: -webkit-gradient(linear, left top, left bottom, from(#202400), to(#111300))
   background: -moz-linear-gradient(top,  #202400,  #111300)
-  border-top: 1px solid #2f3500
+  -moz-box-shadow: 0px -1px 0px #454121
+  -webkit-box-shadow: 0px -1px 0px #454121
+  box-shadow: 0px -1px 0px #454121
+  filter: Shadow(Color=#454121, Direction=0, Strength=1)
   border-bottom: 1px solid #333
   -moz-border-radius-topleft: 1em
   -moz-border-radius-topright: 1em
@@ -29,6 +32,7 @@
 #fun_facts
   padding: 1em 0 1ex 0
   border-top: 1px solid #000
+  
   p
     background-color: #FADC60
     border-top: 1px dashed #d3b256
