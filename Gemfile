@@ -6,7 +6,7 @@ gem "refraction"
 gem "capybara"
 gem "database_cleaner"
 gem "cucumber-rails"
-gem "haml"
+gem "haml", "3.0.12"
 gem "RedCloth"
 
 group :development do
