@@ -50,6 +50,13 @@
     %noscript
       %p
         = image_tag "http://in.getclicky.com/209580ns.gif", :alt => "Clicky", :width => "1", :height => "1"
+        
+    / Reinvigorate code
+    = javascript_include_tag "http://include.reinvigorate.net/re_.js"
+    :javascript
+      try {
+      reinvigorate.track("n20jz-0b8f336u9j");
+      } catch(err) {}
     
     / Google Analytics Code
     :javascript
