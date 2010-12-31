@@ -1,7 +1,7 @@
-source 'http://gemcutter.org'
+source 'http://rubygems.org'
 
+gem "rails", "3.0.3"
 
-gem "rails", "3.0.0.beta"
 gem "refraction"
 gem "capybara"
 gem "database_cleaner"
@@ -20,7 +20,3 @@ group :test do
   gem "launchy"
 end
 
-group :production do
-  gem "pg"
-  gem "thin"
-end
