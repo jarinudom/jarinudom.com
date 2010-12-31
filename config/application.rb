@@ -3,7 +3,7 @@ require File.expand_path('../boot', __FILE__)
 require 'rails/all'
 
 # Auto-require default libraries and those for the current Rails environment.
-Bundler.require :default, Rails.env
+Bundler.require(:default, Rails.env) if defined?(Bundler)
 
 module JarinudomCom
   class Application < Rails::Application
@@ -17,6 +17,10 @@ module JarinudomCom
     # Only load the plugins named here, in the order given (default is alphabetical).
     # :all can be used as a placeholder for all plugins not explicitly named
     # config.plugins = [ :exception_notification, :ssl_requirement, :all ]
+    config.autoload_paths += %W( #{config.root}/lib )
+    # config.action_view.javascript_expansions[:defaults] = %w(jquery rails)
+    config.encoding = "utf-8"
+    
 
     # Activate observers that should always be running
     # config.active_record.observers = :cacher, :garbage_collector, :forum_observer
@@ -40,6 +44,6 @@ module JarinudomCom
     end
 
     # Configure sensitive parameters which will be filtered from the log file.
-    config.filter_parameters << :password
+    config.filter_parameters += [:password]
   end
 end
