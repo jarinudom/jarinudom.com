@@ -1,0 +1,2 @@
+module AdsenseHelper
+end

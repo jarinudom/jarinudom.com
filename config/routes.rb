@@ -1,4 +1,5 @@
 JarinudomCom::Application.routes.draw do |map|
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -10,6 +11,8 @@ JarinudomCom::Application.routes.draw do |map|
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
   match 'resume' => 'resume#index', :as => :resume
+
+  resources :adsense, :only => [:index]
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
