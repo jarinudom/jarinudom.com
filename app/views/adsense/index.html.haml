@@ -16,6 +16,9 @@
   %body
     :javascript
       document.domain = 'posterous.jarinudom.com';
+      var clicky_custom = {};
+      clicky_custom.href = #{request.env["HTTP_REFERER"]};
+      
 
     :plain
       <script type="text/javascript"><!--
