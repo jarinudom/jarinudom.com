@@ -14,12 +14,6 @@
         }  
       
   %body
-    :javascript
-      document.domain = 'posterous.jarinudom.com';
-      var clicky_custom = {};
-      clicky_custom.href = '#{URI.parse(request.env["HTTP_REFERER"]).path rescue nil}';
-      
-
     :plain
       <script type="text/javascript"><!--
       google_ad_client = "ca-pub-3727069797306625";
@@ -32,18 +26,4 @@
       <script type="text/javascript"
       src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
       </script>
-
-    :plain
-      <script type="text/javascript">
-      var clicky = { log: function(){ return; }, goal: function(){ return; }};
-      var clicky_site_id = 209818;
-      (function() {
-        var s = document.createElement('script');
-        s.type = 'text/javascript';
-        s.async = true;
-        s.src = ( document.location.protocol == 'https:' ? 'https://static.getclicky.com/js' : 'http://static.getclicky.com/js' );
-        ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
-      })();
-      </script>
-      <noscript><p><img alt="Clicky" width="1" height="1" src="http://in.getclicky.com/209818ns.gif" /></p></noscript>
 
