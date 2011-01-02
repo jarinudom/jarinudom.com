@@ -12,7 +12,7 @@ JarinudomCom::Application.routes.draw do
   # This route can be invoked with purchase_url(:id => product.id)
   match 'resume' => 'resume#index', :as => :resume
 
-  resources :adsense, :only => [:index]
+  resources :adsense, :only => [:show]
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products

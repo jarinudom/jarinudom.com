@@ -1,6 +1,7 @@
 class AdsenseController < ApplicationController
-  def index
-    render :layout => false
+
+  def show
+    render params[:id], :layout => false
   end
 
 end

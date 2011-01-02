@@ -17,7 +17,7 @@
     :javascript
       document.domain = 'posterous.jarinudom.com';
       var clicky_custom = {};
-      clicky_custom.href = '#{URI.parse(request.env["HTTP_REFERER"]).path}';
+      clicky_custom.href = '#{URI.parse(request.env["HTTP_REFERER"]).path rescue nil}';
       
 
     :plain
