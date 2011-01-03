@@ -60,3 +60,17 @@
       var pageTracker = _gat._getTracker("UA-1396681-1");
       pageTracker._trackPageview();
       } catch(err) {}
+
+    :javascript
+      var $buoop = {
+        newwindow: true
+      }
+      $buoop.ol = window.onload;
+      window.onload=function(){
+       if ($buoop.ol) $buoop.ol();
+       var e = document.createElement("script");
+       e.setAttribute("type", "text/javascript");
+       e.setAttribute("src", "http://browser-update.org/update.js");
+       document.body.appendChild(e);
+      }
+
