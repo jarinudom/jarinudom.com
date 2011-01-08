@@ -1,0 +1,14 @@
+#resume {
+  background-color: white; }
+
+h2, h4, p {
+  padding: 0 23px; }
+
+h2 {
+  padding-top: 23px; }
+
+h4 {
+  margin-bottom: 0; }
+
+.meta {
+  color: #666666; }

@@ -4,6 +4,3 @@ log/*.log
 tmp/**/*
 tmp/restart.txt
 
-public/stylesheets/application.css
-public/stylesheets/home_index.css
-public/stylesheets/resume_index.css
