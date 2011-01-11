@@ -35,14 +35,6 @@
 
     = render :partial => "layouts/footer"
     
-    / OLark Code
-    :javascript
-      (function(){document.write(unescape('%3Cscript src=\'' + (document.location.protocol == 'https:' ? "https:" : "http:") + '//static.olark.com/js/wc.js\' type=\'text/javascript\'%3E%3C/script%3E'));})();
-    #olark-data
-      %a(class="olark-key" id="olark-9406-227-10-6797" title="Powered by Olark" href="http://olark.com/about" rel="nofollow") Powered by Olark
-    :javascript
-      wc_init();
-    
     / Clicky Analytics Code
     = javascript_include_tag "http://static.getclicky.com/js"
     :javascript
