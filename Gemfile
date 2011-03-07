@@ -1,12 +1,13 @@
 source 'http://rubygems.org'
 
-gem "rails", "3.0.3"
+gem "rails", "3.0.5"
 
 gem "refraction"
 gem "capybara"
 gem "database_cleaner"
 gem "cucumber-rails"
 gem "haml", "3.0.12"
+gem 'jquery-rails', '>= 0.2.6'
 gem "RedCloth"
 
 group :development do
