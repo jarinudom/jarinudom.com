@@ -6,7 +6,7 @@ gem "refraction"
 gem "capybara"
 gem "database_cleaner"
 gem "cucumber-rails"
-gem "haml", "3.0.12"
+gem "haml", ">= 3.0.25"
 gem 'jquery-rails', '>= 0.2.6'
 gem "RedCloth"
 
