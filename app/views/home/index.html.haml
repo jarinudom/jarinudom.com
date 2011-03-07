@@ -1,5 +1,13 @@
 - content_for :head do
   = javascript_include_tag "https://www.tungle.me/portal/js/plugins/tungle.mwmWidget.js"
+  :javascript
+    $(function(){
+      $('.noisy').noisy({
+        intensity: 1, 
+        opacity: 0.06,
+        monochrome: false
+      });
+    });
 
 %section#banner.row
   %article.col.col_10.align_left.hyphenate
@@ -15,10 +23,9 @@
     
 .clear
     
-%section#content.row
+%section#content.row.noisy
   %aside#fun_facts
-    :textile
-      This site was developed on a Mac with Rails 3, HTML5, CSS3, HAML, SASS, and 52framework. Cutting edge!
+    %p.noisy This site was developed on a Mac with Rails 3, HTML5, CSS3, HAML, SASS, and 52framework. Cutting edge!
     
   %section.col.col_11
     %article.hyphenate

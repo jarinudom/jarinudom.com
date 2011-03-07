@@ -12,6 +12,8 @@
   -moz-border-radius-topright: 1em;
   -webkit-border-top-left-radius: 1em;
   -webkit-border-top-right-radius: 1em;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
   color: #d2ce9e;
   padding: 28px 0 10px 0; }
   #banner p {
