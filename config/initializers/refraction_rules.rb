@@ -4,7 +4,7 @@ Refraction.configure do |req|
     req.permanent! :host => "jarinudom.com"  
   end
 
-  if req.path == "+"
+  if req.path == "/+"
     req.permanent! "https://plus.google.com/102443793781999255197"
   end
 
